@@ -82,7 +82,7 @@ for product in products:
                 for product in processed_ratings:
                     writer.writerow([product])
 
-    # Scrapping Reviews
+    # Scrapping Reviews 
     reviews_element = product.select('class.a-size-base.s-underline-text')
     if reviews_element:
         reviews = reviews_element[0].text
